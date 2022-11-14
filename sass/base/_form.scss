@@ -1,0 +1,296 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.data-modal {
+  background-color: #fff;
+  width: 528px;
+  height: 581px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 40px;
+
+  @media screen and (max-width: $tablets-min) {
+    width: 300px;
+    height: 630px;
+    line-height: 1.5;
+  }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+    height: 581px;
+  }
+}
+
+.data-modal.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  fill: black;
+  height: 30px;
+  width: 30px;
+
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-icon {
+  position: relative;
+  right: 7px;
+  top: -2px;
+}
+
+.close:hover,
+.close:focus {
+  fill: var(--blueColor);
+  cursor: pointer;
+}
+
+.subscribe-form {
+  @media screen and (max-width: $tablets-min) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+  @media screen and (max-width: $tablets) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    // align-items: center;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+// .subscribe-form {
+//   @media screen and (max-width: $tablets-min) {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     flex-direction: column;
+//   }
+//   @media screen and (min-width: $tablets) {
+//     display: flex;
+//     flex-wrap: wrap;
+//     flex-direction: column;
+//     align-items: center;
+//   }
+//   @media screen and (min-width: $desktop) {
+//     display: flex;
+//     justify-content: center;
+//     gap: 12px;
+//   }
+// }
+
+.subscribe {
+  @media screen and (min-width: $tablets) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+    align-items: flex-start;
+  }
+}
+
+.submit-button {
+  @media screen and (max-width: $tablets-min) {
+    margin: auto;
+  }
+  @media screen and (min-width: $tablets) {
+    margin: auto;
+  }
+}
+
+.input {
+  font-family: inherit;
+  width: 100%;
+
+  filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background: transparent;
+  color: var(--linkGreyColor);
+  font-size: 16px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.telegram-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.person-icon {
+  position: absolute;
+  top: 58%;
+  left: 12px;
+}
+
+.envelop-icon {
+  position: absolute;
+  top: 58%;
+  left: 12px;
+}
+
+.phone2-icon {
+  position: absolute;
+  top: 58%;
+  left: 12px;
+}
+
+.order-form .input {
+  color: var(--textColor);
+  font-size: 12px;
+
+  transition-property: color, fill, outline-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-style {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  font-size: 16px;
+  line-height: 2px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  outline: transparent;
+
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-style:focus-within {
+  border: 1px solid var(--blueColor);
+  cursor: pointer;
+}
+
+.input-style:focus,
+.input-style:hover {
+  cursor: pointer;
+  border-color: var(--blueColor);
+  fill: var(--blueColor);
+}
+
+.input-textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  font-size: 12px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  color: rgba(117, 117, 117, 0.5);
+  outline: transparent;
+
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-textarea:focus-within {
+  border: 1px solid var(--blueColor);
+}
+
+.input-textarea:focus,
+.input-textarea:hover {
+  cursor: pointer;
+  border-color: var(--blueColor);
+}
+
+.input:focus-within {
+  fill: var(--blueColor);
+}
+
+.input:hover {
+  fill: var(--blueColor);
+}
+
+.order-form .agreement {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.form-input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.form-input:checked {
+  background-color: var(--blueColor);
+}
+
+.details {
+  color: var(--blueColor);
+  text-decoration: underline;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.details1 {
+  font-size: 14px;
+  line-height: 2;
+  @media screen and (max-width: $tablets-min) {
+    line-height: 1.14;
+  }
+  @media screen and (min-width: $tablets) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+}

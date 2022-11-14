@@ -1,0 +1,17 @@
+.title-section {
+  text-align: center;
+  margin-bottom: 50px;
+
+  color: var(--headTextColor);
+  line-height: 1.17;
+  font-size: 36px;
+}
+
+.backdrop .title-section {
+  color: var(--headTextColor);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}

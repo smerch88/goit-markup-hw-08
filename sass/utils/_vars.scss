@@ -1,0 +1,21 @@
+:root {
+  --blueColor: #2196f3;
+  --whiteColor: #fff;
+  --textColor: #757575;
+  --headTextColor: #212121;
+  --backgroundDarkColor: #2f303a;
+  --backgroundGreyColor: #f5f4fa;
+  --linkGreyColor: rgba(255, 255, 255, 0.6);
+  --shadowColor: #ececec;
+  --backgroundButtonColor: #188ce8;
+  --backgroundFilter: #f5f5f5;
+  --frameColor: #eeeeee;
+  --iconColor: #afb1b8;
+}
+
+$mobile-min: 479px;
+$mobile: 480px;
+$tablets-min: 767px;
+$tablets: 768px;
+$desktop-min: 1199px;
+$desktop: 1200px;

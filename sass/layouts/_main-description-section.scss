@@ -1,0 +1,101 @@
+.main-description {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: $tablets-min) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/img41m.jpg");
+
+    background-size: cover;
+    max-width: 480px;
+    height: 400px;
+  }
+  @media screen and (min-width: $tablets) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/img41t.jpg");
+
+    background-size: 768px 400px;
+    max-width: 768px;
+    height: 400px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/img41.jpg");
+    background-size: 1600px 600px;
+    max-width: 1600px;
+    height: 600px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .decision {
+      background-image: linear-gradient(
+          to top,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/@2x/header_bg.jpg");
+    }
+  }
+
+  background-repeat: no-repeat;
+}
+
+.main-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: $tablets-min) {
+    padding-top: 118px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    width: 100%;
+  }
+  @media screen and (min-width: $tablets) {
+    padding-top: 118px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    width: 360px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 200px;
+    width: 696px;
+  }
+}
+
+.main-description .main-title {
+  color: var(--whiteColor);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 900;
+
+  @media screen and (max-width: $tablets-min) {
+    line-height: 1.6;
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $tablets) {
+    line-height: 1.6;
+    font-size: 26px;
+  }
+  @media screen and (min-width: $desktop) {
+    line-height: 1.36;
+    font-size: 44px;
+  }
+}

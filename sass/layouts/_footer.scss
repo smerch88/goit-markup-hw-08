@@ -1,0 +1,229 @@
+.page-footer .site-nav-link {
+  padding: 0;
+
+  @media screen and (max-width: $tablets-min) {
+  }
+  @media screen and (min-width: $tablets) {
+    display: block;
+    text-align: center;
+    width: 250px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: inline;
+    width: auto;
+  }
+}
+
+.page-footer a:link {
+  color: var(--whiteColor);
+}
+
+.adress-footer {
+  font-size: 14px;
+
+  @media screen and (max-width: $tablets-min) {
+  }
+  @media screen and (min-width: $tablets) {
+    margin-left: 76px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 0;
+  }
+}
+
+footer .contacts a:link {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  line-height: 1.71;
+
+  @media screen and (max-width: $tablets-min) {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: $tablets) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+footer .contacts a:hover,
+footer .contacts a:focus {
+  color: var(--blueColor);
+}
+
+.page-footer .logo .logo-link {
+  color: var(--blueColor);
+  @media screen and (min-width: $tablets) {
+  }
+}
+
+.page-footer {
+  padding: 60px 0;
+  background-color: var(--backgroundDarkColor);
+}
+
+.logo .footer-span {
+  color: var(--whiteColor);
+}
+
+.page-footer .adress-link {
+  color: var(--whiteColor);
+  @media screen and (max-width: $tablets-min) {
+    text-align: center;
+  }
+  @media screen and (min-width: $tablets) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+.footer-adress {
+  @media screen and (max-width: $tablets-min) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $tablets) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+.footer-adress .footer-item {
+  margin-bottom: 9px;
+}
+
+.footer-adress .footer-item:last-child {
+  margin-bottom: 0;
+}
+
+.page-footer .logo {
+  margin-bottom: 20px;
+  @media screen and (max-width: $tablets-min) {
+    text-align: center;
+  }
+  @media screen and (min-width: $tablets) {
+    text-align: center;
+  }
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
+.page-footer .container {
+  @media screen and (max-width: $tablets-min) {
+  }
+  @media screen and (min-width: $tablets) {
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    align-items: baseline;
+  }
+}
+
+.social-network {
+  @media screen and (max-width: $tablets-min) {
+  }
+  @media screen and (min-width: $tablets) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+.page-footer .social-box {
+  color: var(--whiteColor);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.page-footer .adress-footer {
+  @media screen and (max-width: $tablets-min) {
+  }
+  @media screen and (min-width: $tablets) {
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
+}
+
+.page-footer .social-box:focus,
+.page-footer .social-box:hover {
+  color: var(--whiteColor);
+  background-color: var(--blueColor);
+}
+
+.footer-margin {
+  margin-right: auto;
+  @media screen and (min-width: $tablets) {
+    margin-right: 90px;
+  }
+}
+
+.tablet-footer {
+  @media screen and (min-width: $tablets) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    @media screen and (min-width: $desktop) {
+      flex-wrap: nowrap;
+      margin-bottom: 0;
+    }
+  }
+}
+// .tablet-footer {
+//   @media screen and (min-width: $tablets) {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     margin-bottom: 60px;
+//   }
+// }
+
+.subscribe-form .input {
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 16px;
+
+  @media screen and (max-width: $tablets-min) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: $tablets) {
+    margin-bottom: 20px;
+    width: 450px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+    margin-bottom: 0;
+  }
+}
+
+.social-box:hover,
+.social-box:focus {
+  background-color: var(--blueColor);
+  color: var(--whiteColor);
+}
+
+.join {
+  font-size: 14px;
+  color: var(--whiteColor);
+  line-height: 1.14;
+  font-weight: 700;
+  line-height: 1.14;
+
+  @media screen and (max-width: $tablets-min) {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: $tablets) {
+    text-align: center;
+  }
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
+.page-footer {
+  padding: 60px 0;
+  background-color: var(--backgroundDarkColor);
+}

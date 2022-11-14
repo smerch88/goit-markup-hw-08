@@ -1,0 +1,106 @@
+.exeptions {
+  line-height: 1.14;
+  font-size: 14px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: $tablets-min) {
+  }
+  @media screen and (min-width: $tablets) {
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.exeptions__items-title {
+  font-size: 14px;
+  color: var(--headTextColor);
+  margin-bottom: 10px;
+
+  @media screen and (max-width: $tablets-min) {
+    text-align: center;
+  }
+  @media screen and (min-width: $tablets) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+.exeptions__items-item {
+  @media screen and (max-width: $tablets-min) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: $tablets-min) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: $tablets) {
+    width: 354px;
+  }
+}
+
+.exeptions__items-item::before {
+  display: block;
+  content: " ";
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: $tablets-min) {
+    width: 100%;
+  }
+  @media screen and (min-width: $tablets) {
+    width: 354px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
+}
+
+.attention-icon::before {
+  background-image: url(../images/Vector41.svg);
+}
+.time-icon::before {
+  background-image: url(../images/Vector42.svg);
+}
+.plan-icon::before {
+  background-image: url(../images/Vector43.svg);
+}
+
+.modern-icon::before {
+  background-image: url(../images/Vector44.svg);
+}
+
+.exeptions__items {
+  @media screen and (max-width: $tablets-min) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: $tablets) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.exeptions__text {
+  line-height: 1.7;
+
+  @media screen and (max-width: $tablets-min) {
+  }
+  @media screen and (min-width: $tablets) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+}
